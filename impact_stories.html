@@ -39,30 +39,35 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
 <!-- Navigation -->
-<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between h-20">
 <div class="flex items-center gap-3">
 <div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
-<span class="material-symbols-outlined font-bold">volunteer_activism</span>
+<span class="material-symbols-outlined font-bold">diversity_3</span>
 </div>
-<span class="text-xl font-extrabold tracking-tight">Mwaka Nawila</span>
+<a href="/" class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">Mwaka Nawila Foundation</a>
 </div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us.html">About</a>
-<a class="text-sm font-semibold text-primary" href="impact_stories.html">Impact</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs.html">Projects</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us.html">Contact us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs">Programs</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us">About Us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="gallery">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us">Contact Us</a>
 </nav>
 <div class="flex items-center gap-4">
-<button onclick="window.location.href='donate.html'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
-Donate Now
+<button onclick="window.location.href='donate'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+Donate
+</button>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </div>
 </div>
 </header>
+
 <main>
 <!-- Hero Section -->
 <section class="relative h-[600px] flex items-center justify-center overflow-hidden">
@@ -335,7 +340,7 @@ Donate Now
 <h2 class="text-4xl md:text-5xl font-extrabold text-background-dark mb-8 leading-tight">Help us create more stories like these.</h2>
 <p class="text-xl text-background-dark/80 mb-10 font-medium">Your contribution, no matter the size, helps provide a future for the next generation of Zambian leaders, artists, and innovators.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button onclick="window.location.href='donate.html'" class="bg-background-dark text-white px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1">
+<button onclick="window.location.href='donate'" class="bg-background-dark text-white px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1">
 Donate Now
 </button>
 <button class="bg-white text-background-dark px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:-translate-y-1">Become a Mentor</button>
@@ -344,32 +349,56 @@ Donate Now
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-white dark:bg-background-dark py-12 border-t border-primary/10">
-<div class="max-w-7xl mx-auto px-4">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex items-center gap-3">
-<div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
-<span class="material-symbols-outlined font-bold text-sm">volunteer_activism</span>
+
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-white mb-6">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined text-xl font-bold">diversity_3</span>
 </div>
-<span class="text-lg font-bold tracking-tight">Mwaka Nawila Foundation</span>
+<span class="text-xl font-black uppercase">Mwaka Nawila</span>
 </div>
-<div class="flex gap-8 text-sm font-medium text-slate-500">
-<a class="hover:text-primary" href="#">Terms</a>
-<a class="hover:text-primary" href="#">Privacy</a>
-<a class="hover:text-primary" href="contact_us.html">Contact</a>
-</div>
+<p class="max-w-sm mb-8 leading-relaxed">
+                        A registered NGO dedicated to transforming the lives of youth in Zambia through health, education, and social protection initiatives.
+                    </p>
 <div class="flex gap-4">
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-slate-500 hover:bg-primary hover:text-background-dark transition-all" href="#">
-<span class="material-symbols-outlined text-sm">language</span>
+<a class="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
 </a>
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-slate-500 hover:bg-primary hover:text-background-dark transition-all" href="#">
-<span class="material-symbols-outlined text-sm">alternate_email</span>
+<a class="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
 </a>
 </div>
 </div>
-<div class="mt-8 pt-8 border-t border-primary/5 text-center text-slate-400 text-xs">
-                © 2024 Mwaka Nawila Foundation. All rights reserved. Registered NGO in Zambia.
-            </div>
+<div>
+<h5 class="text-white font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="about_us">About Our Foundation</a></li>
+<li><a class="hover:text-primary transition-colors" href="impact_stories">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="our_programs">Current Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Get Involved</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="volunteer_signup">Become a Volunteer</a></li>
+<li><a class="hover:text-primary transition-colors" href="become_a_partner">Corporate Partnerships</a></li>
+<li><a class="hover:text-primary transition-colors" href="donate">Make a Donation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Spread the Word</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-xs uppercase tracking-widest font-bold">
+<p>© 2024 Mwaka Nawila Foundation. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
 </div>
 </footer>
+
 </body></html>
