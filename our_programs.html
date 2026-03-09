@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs | Mwaka Nawila Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Mwaka Nawila Foundation</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs.html">Programs</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us.html">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="impact_stories.html">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="donate.html">Donate</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us.html">Contact Us</a>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-slate-900 dark:text-slate-100 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center">
+<div class="layout-content-container flex flex-col max-w-[1200px] w-full p-6 md:p-10">
+<!-- Hero Section -->
+<div class="flex flex-col gap-4 py-10">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                            Our Impact Programs
+                        </h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl max-w-2xl font-normal leading-relaxed">
+                            Empowering communities through sustainable development, education, and health initiatives. Join us in creating a lasting difference.
+                        </p>
+</div>
+<!-- Category Tabs -->
+<div class="mb-8 overflow-x-auto">
+<div class="flex border-b border-slate-200 dark:border-slate-800 gap-8 min-w-max">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-slate-900 dark:text-slate-100 pb-3 font-bold text-sm tracking-wide" href="#">
+                                All Programs
+                            </a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 hover:text-primary pb-3 font-bold text-sm tracking-wide transition-colors" href="#">
+                                Health &amp; Wellness
+                            </a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 hover:text-primary pb-3 font-bold text-sm tracking-wide transition-colors" href="#">
+                                Education
+                            </a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 hover:text-primary pb-3 font-bold text-sm tracking-wide transition-colors" href="#">
+                                Sustainability
+                            </a>
+</div>
+</div>
+<!-- Programs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- HIV Prevention Card -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Healthcare workers providing community health education" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_HJyG87InOQi-ZeSkUH9wcPwoEOw7GdPr2rKsLqQr3lORGGXPRx5sJZrhUVqWJw9VfEsUDk3uOBthl87Ayg_nija5nRmH1y4y6kvQQ7CqDOvctCWNInHlnxz1-NsiEVZWQGRvdJvfMnKAXbArq9-QqfGG1JNhTufROmPbTExKHXJWB19BnzNBe2SiFIVLnRXzUQCr1H0WxKu2KhNZ3hi1VsngXr0wVpVndP2Q1-A9YyZ9xrkSy87zRQnFqVp2B9wipsUmcJ7b7cAT");'></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="mb-4">
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Health</span>
+</div>
+
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">HIV Prevention &amp; Awareness</h3>
+
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+Reducing transmission through localized education, voluntary testing, and consistent community health initiatives focused on vulnerability.
+</p>
+
+<div class="flex gap-3">
+
+<a href="support_donate.html" class="flex-1">
+<button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
+Support
+</button>
+</a>
+
+<a href="contact_us.html" class="flex-1">
+<button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+Inquire
+</button>
+</a>
+
+</div>
+</div>
+</div>
+<!-- Youth Empowerment Card -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Diverse group of young people collaborating on a project" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxLjA-PvXmrIk59DtLuollQxubkqjP-js8Jh5PZA2gvwMz73KBcamZ1yBq4sukTEq8Sg9jwPbghP9STG42K5rzhF-FoqwGwfzIxBhS5k_5Wjjs7fQOpEJngqMQJ5ymnVYq_Y5xtSjlZSApc7GpYNQjHydD3DgZvYcLqOa7kZjFhwpabHbb3y0adJLKrCbR8LYBpn7-hyhTAgBeL5juH3PHEJF8NHj8raNsaG4RllLmm99sqBZY_OYK_PRn3JZFBkfvX_FqHo4GVab4");'></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="mb-4">
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Development</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">Youth Empowerment</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Equipping the next generation with technical skills, leadership training, and entrepreneurship opportunities for a brighter socioeconomic future.
+                                </p>
+<div class="flex gap-3">
+
+<a href="support_donate.html" class="flex-1">
+<button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
+Support
+</button>
+</a>
+
+<a href="contact_us.html" class="flex-1">
+<button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+Inquire
+</button>
+</a>
+</div>
+</div>
+</div>
+<!-- Girl Child Education Card -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Young girls reading books in a bright classroom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-qHZSaENA1GsoliHfVSfZJgyFdqutYOWUKUuQNnQSKnzsRXDWDJc0D8wJhDGPO3hfqOtIwm_uLPObTZ2dPLDqqw5-mnGUOy4GAEPKS9q2oDAoyCtHZYxOGOP7V38TxhW1w1_Ry119K9pOydnwoJ5awsbFaQJfoLWaDXCm2HtmeAlUceTdP5_gVR4xNqtViAijeQUNU093tWrDV_Q3PefCWH5fn4HkZtJiVxiO2YkfWmJwOEbsaxQ5m6HsCsgNUxU3QrFIuCPY-nYG");'></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="mb-4">
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Education</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">Girl Child Education</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Ensuring every girl has access to quality education, mentoring, and the necessary resources to overcome barriers to learning.
+                                </p>
+<div class="flex gap-3">
+
+<a href="support_donate.html" class="flex-1">
+<button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
+Support
+</button>
+</a>
+
+<a href="contact_us.html" class="flex-1">
+<button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+Inquire
+</button>
+</a>
+</div>
+</div>
+</div>
+<!-- Child Protection Card -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Protective environment for children playing safely" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPWr5mpTmZbAqpcfPN39wpAEMssfYl_UNumAhORt7dO5LbvWVh4Z8wS5Y5QQ3DfaqDyeGd1ClA1iHSbdv1BbhaSti3IBc6YmGCiMlvx5khNJYNJ2BNGEO2W169ytJcWKonEYVEaKruWjoHnoji69jQEwcyXUOLp4w2EWk9CWFoehTUc07EdIdiw-5srwFrs9FXI3z_amJxsR2Uzj1_NPH6PpFc8x6b5e7-PFJWqO97Dx6Pxv6rRQ646xBjJH9RSaBVSo_rKy1E2Zex");'></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="mb-4">
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Advocacy</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">Child Protection</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Safeguarding vulnerable children from exploitation and abuse while promoting their emotional and physical well-being.
+                                </p>
+<div class="flex gap-3">
+
+<a href="support_donate.html" class="flex-1">
+<button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
+Support
+</button>
+</a>
+
+<a href="contact_us.html" class="flex-1">
+<button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+Inquire
+</button>
+</a>
+</div>
+</div>
+</div>
+<!-- Climate Action Card -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="Lush green forest representing climate action and nature" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtejpbn8m8pBl1MNYiydj6_wN5OjMtYtsrAkvZBuMqi0oe7oxBJLW3eexfExRNtCQVlEYjrreDsFCE9_DjHF6MdpXFKuvsyH0dj-fkhUMIiABp11O9An1UqS3thxa8ZlL8v0FQw5Zail-AlMplyYjh2uxCxB9dyk3OzsrmNMzW_aEx9ackZllGdNyoX0HalHlgNK4UBx6MkGB4QWhWriffQ2J85paNNvEwvfeW4VgzBcJzM_K2xHUiXUS80BxgS9XiqgcEC1ksVDhh");'></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="mb-4">
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Environment</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">Climate Action</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Promoting environmental sustainability through community-led conservation, reforestation, and climate resilience projects.
+                                </p>
+<div class="flex gap-3">
+
+<a href="support_donate.html" class="flex-1">
+<button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
+Support
+</button>
+</a>
+
+<a href="contact_us.html" class="flex-1">
+<button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+Inquire
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-20 @container">
+<div class="flex flex-col items-center justify-center gap-8 px-6 py-16 rounded-3xl bg-slate-900 dark:bg-primary/5 text-center">
+<div class="max-w-2xl flex flex-col gap-4">
+<h2 class="text-white dark:text-slate-100 text-3xl md:text-5xl font-black leading-tight">
+                                    Ready to make an impact?
+                                </h2>
+<p class="text-slate-300 dark:text-slate-400 text-base md:text-lg">
+                                    Your contribution—whether time, expertise, or funding—helps us expand these critical programs to more communities in need.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center">
+<a href="support_donate.html" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-slate-900 text-lg font-bold hover:brightness-110 transition-all">
+Make a Donation
+</a>
+
+<a href="become_a_partner.html" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/10 text-white border border-white/20 text-lg font-bold hover:bg-white/20 transition-all">
+Partner With Us
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12 px-6 md:px-20 mt-10">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-slate-900 dark:text-slate-100 mb-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</svg>
+</div>
+<span class="font-bold text-lg">Mwaka Nawila Foundation</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+                            A non-profit organization dedicated to fostering sustainable community development and individual empowerment across the region.
+                        </p>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-slate-100 text-sm uppercase tracking-widest">Programs</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="hiv_prevention.html">Health Care</a></li>
+<li><a class="hover:text-primary transition-colors" href="girl_child_education.html">Education</a></li>
+<li><a class="hover:text-primary transition-colors" href="youth_empowerment.html">Youth Skills</a></li>
+<li><a class="hover:text-primary transition-colors" href="climate_action.html">Environment</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-slate-100 text-sm uppercase tracking-widest">Connect</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="contact_us.html">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="volunteer_signup.html">Volunteer</a></li>
+<li><a class="hover:text-primary transition-colors" href="news_blog.html">Newsroom</a></li>
+<li><a class="hover:text-primary transition-colors" href="donate.html">Donate Now</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-400 text-xs">
+                    © 2024 Mwaka Nawila Foundation. All rights reserved.
+                </div>
+</footer>
+</div>
+</div>
+</body></html>

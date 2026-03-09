@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-white dark:bg-slate-900">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">volunteer_activism</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] font-display">Mwaka Nawila Foundation</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="our_programs.html">Programs</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="about_us.html">About</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="contact_us.html">Contact</a>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-slate-900 text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                Donate Now
+            </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative bg-slate-900 py-16 md:py-24 overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Happy children in a community setting smiling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvYdzaCKhM51Aq9I51qogm2I6sCnx8Z3ILNMi6hyeXbI1cvqof2iz5kJA0h5v4Yx5BG4lvUA6qpmGmFWDuQsmuMOqAOMHEALvybUE9MpJSanc4O67PfeUoBGlZxjDaczzrcHv3CK6c5qRupBF0DCV-IQo8ynYJ6n29_EmKecj_0lS8ixVOmBsYUnOQQUTnXi2_dm9-jTVK0C4vRhIAxBcxoNBK24QN_G0sTYPgGcxR3VOL0Wu_DsRO4DVb8dQTKKfrEv6n4F2ebZ3D')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+<div class="relative max-w-4xl mx-auto px-6 text-center">
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight font-display mb-6">
+                    Your Support <span class="text-primary">Changes Lives.</span>
+</h1>
+<p class="text-slate-200 text-lg md:text-xl font-normal max-w-2xl mx-auto mb-8">
+                    Join us in making a difference in Zambia. Every contribution brings hope, education, and health to our local communities.
+                </p>
+<div class="flex items-center justify-center gap-4 text-white/80 text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-lg">verified_user</span> 100% Transparency</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-lg">security</span> Secure Payment</span>
+</div>
+</div>
+</section>
+<!-- Donation Form Container -->
+<section class="max-w-[960px] mx-auto px-4 md:px-10 -mt-12 mb-20">
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-xl p-6 md:p-10 border border-slate-100 dark:border-slate-800">
+<!-- Step 1: Amount Selection -->
+<div class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center size-8 rounded-full bg-primary/20 text-primary font-bold">1</span>
+<h2 class="text-xl font-bold font-display">Select Donation Amount</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-primary bg-primary/5 text-slate-900 dark:text-white font-bold transition-all hover:bg-primary/10">
+<span class="text-xs font-normal opacity-70">ZMW</span>
+<span class="text-xl">100</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-900 dark:text-white font-bold transition-all">
+<span class="text-xs font-normal opacity-70">ZMW</span>
+<span class="text-xl">250</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-900 dark:text-white font-bold transition-all">
+<span class="text-xs font-normal opacity-70">ZMW</span>
+<span class="text-xl">500</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/50 text-slate-900 dark:text-white font-bold transition-all">
+<span class="text-xs font-normal opacity-70">ZMW</span>
+<span class="text-xl">1000</span>
+</button>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium mb-2 opacity-70">Enter Custom Amount (ZMW)</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-slate-400">K</span>
+<input class="w-full pl-10 pr-4 py-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Other amount" type="number"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Donor Info -->
+<div class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center size-8 rounded-full bg-primary/20 text-primary font-bold">2</span>
+<h2 class="text-xl font-bold font-display">Your Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium opacity-70">Full Name</label>
+<input class="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-2 focus:ring-primary outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium opacity-70">Email Address</label>
+<input class="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-2 focus:ring-primary outline-none" placeholder="john@example.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-sm font-medium opacity-70">Phone Number (For Mobile Money)</label>
+<input class="p-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-2 focus:ring-primary outline-none" placeholder="+260 9xx xxx xxx" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Step 3: Payment Method -->
+<div class="mb-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="flex items-center justify-center size-8 rounded-full bg-primary/20 text-primary font-bold">3</span>
+<h2 class="text-xl font-bold font-display">Payment Method</h2>
+</div>
+<div class="space-y-4">
+<!-- Mobile Money -->
+<div class="border-2 border-primary rounded-xl p-4 bg-primary/5 cursor-pointer">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">smartphone</span>
+<span class="font-bold">Mobile Money</span>
+</div>
+<div class="flex gap-2">
+<div class="h-6 w-10 bg-white rounded shadow-sm border flex items-center justify-center text-[8px] font-bold text-red-600">Airtel</div>
+<div class="h-6 w-10 bg-white rounded shadow-sm border flex items-center justify-center text-[8px] font-bold text-yellow-500">MTN</div>
+<div class="h-6 w-10 bg-white rounded shadow-sm border flex items-center justify-center text-[8px] font-bold text-green-700">Zamtel</div>
+</div>
+</div>
+<p class="text-xs opacity-70">Fast and secure payment via Zambian mobile networks.</p>
+</div>
+<!-- Card -->
+<div class="border-2 border-slate-100 dark:border-slate-800 rounded-xl p-4 hover:border-primary/50 cursor-pointer transition-all">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500 text-2xl">credit_card</span>
+<span class="font-bold">Credit / Debit Card</span>
+</div>
+<div class="flex gap-2 opacity-60">
+<span class="material-symbols-outlined text-xl">payments</span>
+</div>
+</div>
+<p class="text-xs opacity-70">Visa and Mastercard accepted worldwide.</p>
+</div>
+<!-- Bank Transfer Info -->
+<div class="border-2 border-slate-100 dark:border-slate-800 rounded-xl p-4 hover:border-primary/50 cursor-pointer transition-all">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500 text-2xl">account_balance</span>
+<span class="font-bold">Direct Bank Transfer</span>
+</div>
+</div>
+<div class="text-xs space-y-1 opacity-80 bg-slate-50 dark:bg-slate-800/50 p-3 rounded-lg border border-dashed border-slate-200 dark:border-slate-700">
+<p><strong>Bank:</strong> First National Bank (FNB) Zambia</p>
+<p><strong>Account Name:</strong> Mwaka Nawila Foundation</p>
+<p><strong>Account Number:</strong> 628XXXXXXX</p>
+<p><strong>Branch:</strong> Lusaka Main</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Transparency & Submit -->
+<div class="mt-12 p-6 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800 text-center">
+<div class="inline-flex items-center justify-center size-12 bg-primary/10 rounded-full mb-4">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</div>
+<h3 class="font-bold text-lg mb-2 font-display">Your Impact</h3>
+<p class="text-sm opacity-80 mb-6 max-w-md mx-auto">
+                        100% of your donation goes directly to community programs. We are committed to radical transparency and regular reporting on how your gift is used.
+                    </p>
+<button class="w-full md:w-auto min-w-[300px] py-4 bg-primary text-slate-900 font-bold rounded-lg text-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+                        Complete Donation
+                    </button>
+<div class="mt-6 flex items-center justify-center gap-6 opacity-40">
+<span class="flex items-center gap-1 text-xs"><span class="material-symbols-outlined text-sm">lock</span> Secure 256-bit SSL</span>
+<span class="flex items-center gap-1 text-xs"><span class="material-symbols-outlined text-sm">verified</span> PCI Compliant</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial/Impact Mini Section -->
+<section class="max-w-4xl mx-auto px-6 mb-24 grid md:grid-cols-3 gap-8 text-center">
+<div class="flex flex-col items-center">
+<span class="text-3xl font-bold text-primary mb-1">5,000+</span>
+<span class="text-sm opacity-70">Lives Impacted</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-3xl font-bold text-primary mb-1">12</span>
+<span class="text-sm opacity-70">Active Programs</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-3xl font-bold text-primary mb-1">100%</span>
+<span class="text-sm opacity-70">Donor Focused</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-16 px-6 md:px-20 border-t border-slate-800">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+<span class="text-white font-bold text-lg">Mwaka Nawila</span>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Empowering Zambian communities through sustainable development, education, and healthcare initiatives.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="about_us.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="our_programs.html">Our Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="news_blog.html">Latest News</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact_us.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Support</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="donate.html">Donate Online</a></li>
+<li><a class="hover:text-primary transition-colors" href="volunteer_signup.html">Volunteer</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Partnerships</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Newsletter</h4>
+<p class="text-sm text-slate-400 mb-4">Subscribe to get impact stories in your inbox.</p>
+<div class="flex gap-2">
+<input class="bg-slate-800 border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-slate-900 px-4 py-2 rounded-lg font-bold text-sm">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+<p>© 2024 Mwaka Nawila Foundation. Registered NGO in Zambia.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

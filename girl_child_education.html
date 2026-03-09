@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark px-6 md:px-20 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-extrabold tracking-tight">Mwaka Nawila</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Programs</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Donate</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-slate-900 px-6 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                    Sponsor
+                </button>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative h-[600px] flex items-center justify-center text-center px-4 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-slate-900/60 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Young Zambian girl smiling in school uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBji68jTM57on5iALpAm-XxB3FvaULAHYgt99Hy6POIXvDNifaSgkpxB0TZH1KTVMTZcFT6LYQTFaBBiriayp9taWbxS_Q0sMreDw8z38wghh4dVqQoKq8Vl4ELjFUTb4kUuFUUqbshhaGmdqbZ-Sqx4ThX8e6sWKlOq_GgqSo0kIlzrfaXCtbOzinsxo-WSHVoF7qfZ7IP5w5uRwPmwQDAEZdcwE-Q02WpqNBMFCEava03U-OqrlSGWktu1_OzlFkZy-KpmiK1z4yp"/>
+</div>
+<div class="relative z-20 max-w-4xl mx-auto">
+<span class="bg-primary/20 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 inline-block">Our Flagship Program</span>
+<h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                        Empowering the Girl Child through Education
+                    </h1>
+<p class="text-slate-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                        Breaking systemic barriers and creating a brighter future for every girl in rural Zambia through quality schooling.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-slate-900 px-8 py-4 rounded-lg text-base font-bold hover:scale-105 transition-transform">
+                            Support Our Mission
+                        </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg text-base font-bold hover:bg-white/20 transition-all">
+                            View Impact Report
+                        </button>
+</div>
+</div>
+</section>
+<!-- The Challenge Section -->
+<section class="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full aspect-square object-cover" data-alt="Group of students walking on dusty road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB54_rxdLUJ4Fg4rgM_CWQqjSldMoLDdFH1BLnFoEsgTNkUBq0CidfAqWShLpFkR7r4DrBXm5OUy7o3--qaqHGdvISEq53huOzAogCNqHH1RLh1STEysdW95qNCV8CvOKSW74nZk145Wss4wG28xh9fjAcQ3F08RE0tqvL33PA0nQGFj73eU-oi66SBy9UT2cdHAZx6Pz4pf0ZVzyG94luvFpROoV72WsU8172ALmMyfhxV8cwdP8sceLtPoVZ-h2unsFwXSn2bV36p"/>
+<div class="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-slate-800/95 p-6 rounded-xl">
+<p class="text-sm italic text-slate-600 dark:text-slate-400">"The journey to school is often more than just a walk; it's a battle against poverty and tradition."</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-4">The Context</h2>
+<h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-slate-100 mb-6 leading-tight">The Challenge in Zambia</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed">
+                            In many Zambian communities, girls face overwhelming barriers to education. Financial hardships prioritize boys' schooling, while long, unsafe distances to institutions deter families from sending daughters.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">error_outline</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Economic Barriers</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">High costs of uniforms, books, and tuition fees often force girls out of the classroom.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">distance</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Distance &amp; Safety</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Daily walks exceeding 10km put girls at risk of gender-based violence and exhaustion.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">group</span>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Cultural Expectations</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Early marriage and household responsibilities frequently truncate academic journeys.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Our Solution Section -->
+<section class="bg-slate-50 dark:bg-slate-900/50 py-24 px-6 md:px-20">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-4">How We Help</h2>
+<h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-slate-100">Our Comprehensive Solution</h3>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">local_library</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Full Scholarships</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Covering 100% of tuition, exam fees, and registration costs to ensure financial stability throughout secondary education.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">backpack</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">School Supplies</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Providing high-quality uniforms, textbooks, stationery, and menstrual hygiene kits to remove daily obstacles.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">shield</span>
+</div>
+<h4 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">Safe Spaces</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Facilitating mentorship circles and safe transportation solutions to protect girls during their academic pursuits.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Metrics Section -->
+<section class="py-24 px-6 md:px-20 bg-primary text-slate-900">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<div class="text-5xl font-black mb-2">1,200+</div>
+<div class="text-sm font-bold uppercase tracking-wide opacity-80">Girls in School</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2">94%</div>
+<div class="text-sm font-bold uppercase tracking-wide opacity-80">Graduation Rate</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2">45+</div>
+<div class="text-sm font-bold uppercase tracking-wide opacity-80">Partner Schools</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2">15k</div>
+<div class="text-sm font-bold uppercase tracking-wide opacity-80">Supply Kits Sent</div>
+</div>
+</div>
+</section>
+<!-- Sponsor a Girl CTA -->
+<section class="py-24 px-6 md:px-20">
+<div class="max-w-5xl mx-auto bg-slate-900 dark:bg-slate-800 rounded-[2rem] overflow-hidden flex flex-col md:flex-row">
+<div class="w-full md:w-1/2">
+<img class="h-full w-full object-cover min-h-[300px]" data-alt="Teacher helping girl with schoolwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMhqqA5Ei92eJyX-XU1nnjylzIl3qX0TREcATA3h3APkyZ7VKQrizcZ0QmWdlH_L3IpQDjSjCMeYRirRa5NAipHRaOOhVYeNQQpnWmtIi4kAmHkIrgQ6E28sak4o7TaHMtbX267zIBbSmsi6hEWjGZefjT4DWmAryiDTxtK6g2BEYiGnVnblFFHR20HQt_jB0AXymZ46pkjcVFFN75NWfTI_GWZsN7NuKxROdokOL-9sWr5ZMjsx-qke39Yy1eckMEvBfh-FjMNpG7"/>
+</div>
+<div class="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center text-white">
+<h3 class="text-3xl font-extrabold mb-6 leading-tight">Be the Catalyst for Change</h3>
+<p class="text-slate-300 mb-8 text-lg">Your monthly contribution of $35 can keep one girl in school for a whole year, covering all her educational needs.</p>
+<div class="space-y-4">
+<button class="w-full bg-primary text-slate-900 py-4 rounded-xl font-bold text-lg hover:shadow-[0_0_20px_rgba(19,236,91,0.4)] transition-all">
+                                Sponsor a Girl Today
+                            </button>
+<p class="text-center text-xs text-slate-400">100% of your donation goes directly to the student.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12 px-6 md:px-20 text-center">
+<div class="flex flex-col items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">school</span>
+<span class="text-lg font-bold text-slate-900 dark:text-slate-100">Mwaka Nawila Foundation</span>
+</div>
+<div class="flex gap-6 text-sm text-slate-600 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Annual Report</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<p class="text-xs text-slate-500 mt-4">© 2024 Mwaka Nawila Foundation. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

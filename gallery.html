@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery - Mwaka Nawila Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "accent-orange": "#f97316",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-6 md:px-20 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-3 text-slate-900 dark:text-slate-100">
+<div class="size-8 flex items-center justify-center bg-primary rounded-lg text-background-dark">
+<span class="material-symbols-outlined font-bold">diversity_3</span>
+</div>
+<h2 class="text-lg font-extrabold leading-tight tracking-tight">Mwaka Nawila <span class="text-primary">Foundation</span></h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us.html">About Us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs.html">Our Work</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary" href="gallery.html">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us.html">Contact</a>
+</nav>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-primary text-background-dark text-sm font-bold hover:shadow-lg hover:shadow-primary/20 transition-all">
+<span>Donate</span>
+</button>
+</div>
+<button class="md:hidden text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<div class="@container">
+<div class="p-4 md:p-10">
+<div class="relative flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center overflow-hidden" data-alt="Group of African children smiling in a classroom environment" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfeZbxEy4qh8GSGoTiDuakEStFqTq3mpqYCHDTxSshUMp4S2gQ-726nsbWSWKEQk09Fv1N_Pn7DdcQpxfVsBJrtE4uvGYnVgZ-wsLv3GK5PQlAdn4YbGy81yXY3rxHycVdqhpRwS9z-Tj1bFJt5N47y05FJAxaZzklszJWYQlI7QaGJKeOrLs82ZcX6dPFpyM_kWxg8b6VUOtkUxYL3K3PZ-4j0NH9YgzxiNwDjTjmg7nTip3b1JhoKr8E5HG5lZJDlZm2TI3g42Yt");'>
+<div class="flex flex-col gap-4 max-w-2xl">
+<span class="inline-block self-center px-4 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest border border-primary/30 backdrop-blur-sm">Our Impact</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                                Our Work in Action
+                            </h1>
+<p class="text-slate-200 text-lg md:text-xl font-medium leading-relaxed">
+                                Witness the impact of our programs through these moments captured across our communities. Every photo tells a story of hope and progress.
+                            </p>
+</div>
+<div class="flex gap-4">
+<button class="flex cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-primary text-background-dark text-base font-bold hover:scale-105 transition-transform">
+                                Support Our Vision
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter Controls -->
+<div class="px-4 md:px-10 py-6">
+<div class="flex gap-3 overflow-x-auto pb-4 no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-primary px-6 text-background-dark text-sm font-bold shadow-md">
+                        All Projects
+                    </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 text-slate-700 dark:text-slate-200 text-sm font-semibold hover:border-primary transition-colors">
+                        Youth Empowerment
+                    </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 text-slate-700 dark:text-slate-200 text-sm font-semibold hover:border-primary transition-colors">
+                        Health Outreach
+                    </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 text-slate-700 dark:text-slate-200 text-sm font-semibold hover:border-primary transition-colors">
+                        Girl Child Education
+                    </button>
+<button class="flex h-10 shrink-0 items-center justify-center rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-6 text-slate-700 dark:text-slate-200 text-sm font-semibold hover:border-primary transition-colors">
+                        Community Events
+                    </button>
+</div>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-10">
+<!-- Image 1 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Young African students studying together in a bright library" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBO4UUFuM7LZTiPUoEeDhzPbxuG5lk4dolhhJhSvIfoD__8hPV1aSTVLUQsiaCFDD9SiuKmoE_ndZy8Yz7N9umqmblVC1BpBMg1rQuWoXdP3dMxcS-NVv2xEBqkU6YiKPw3b4DvQMm2gnu1gWhgae974jpKA--wSs071BP1EvLQDe5ITssookmfidi7qQxS9Qqe9RkWftnM57yWKhJQfP3aUs_B5sgSHhSE3oMH8vDVWITxe5kB5mub9H2aVTVmmOqPX9vobLuUaFn5");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Girl Child Education</span>
+<h3 class="text-white text-xl font-bold">Classroom Learning</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Supporting rural education initiatives in Zambia.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<!-- Image 2 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Medical professional providing care at a mobile clinic in Africa" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw0TkBoG5DlaTA_tG6fqR-t1bJUomYNV1IC5xzbw9bPL3KHFoLmR8b7ud-oRGMeCs_8zW5zJLefb49tkgK-p-YmJKJ-iB_HNnKelZ7Fg345bf7gsJimjvOHU8lKFLuOmUNOZ5y9UauCPzIncKVNHCLYTI6OCbd9Ex4fTkQ7hiX5C_tBddlcfPqijRd7tHOFqRdegPyGL4d9YPf6LMCO56WC4g4O6Ptssqs2y56i41uUaLfn7ac260sy367ngCgBO9EHYX2BnCPxfRV");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-accent-orange text-white text-[10px] font-bold uppercase mb-2">Health Outreach</span>
+<h3 class="text-white text-xl font-bold">Mobile Health Clinic</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Ensuring healthcare reaches the most remote areas.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<!-- Image 3 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Young African leaders in a discussion circle during a workshop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0dRmOmR3VyxKo-zUCJqU354U_uPoOy7lcFRPLX95pA_Jq66AtZE81x1iwx5vWgqZ313H-XEdJbnzNMaBBxz58DyaNey4A84sGD1a6vaof7pLN212U6Y9NPZpAabt8YqTjg6EW6vhx6ZI3UT8TIeBRNziKr3QXVqhBEz4KrrUnbfwEjWzCROPugzjK3LPA1TKGvFPXhpCwSi9RaCwj8t2d5syH9TCTZaCWRTodcDEzX86Xhj3H9jY4vC5fUm_7sFE-3zOcFo83DHPs");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Youth Empowerment</span>
+<h3 class="text-white text-xl font-bold">Leadership Workshop</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Empowering the next generation of African leaders.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<!-- Image 4 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Smiling child receiving new school supplies" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBl3at4uip7faNBXgT7SVp2LojH8ECLNC3L62LKxZb5x3Xvw2ZArLrZfDfZGgWIj_gTR9Tp5LGeLQt7hEPEKeS7VJ8uMcxopkQyRmE1sPS1n2xAZIn8OuKk7Z5YyPLwVx-i92BFZUH6NWzSBOtwmmlwNGz8afa3Wdxp0Q5i_CHIWaX9fcf1FNtA2NcnZlc3nS4ZHQVDzseXv2GeSRy1xJFlCl1lNS2PkEbPZR5a6fMzXOFdE7RhkWVz7YPa9wL4Ns2_HWSAPm_9PveH");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Girl Child Education</span>
+<h3 class="text-white text-xl font-bold">School Supply Distribution</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Providing essential tools for academic success.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<!-- Image 5 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Community members participating in a tree planting activity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQwEyPaeMbNN7MiL7G_NPz1PIu4M4OYEPQAqHnHyaP78qaPT3p8izVT6Af6rT7YskJwcz9PfKg6jipZswLL2ZfgCi8Qo5C4_gbjsIXF7FxngdYSIFmhNjeoOs0NenRVPFSl2HLcQ4T7UOZzPiwfB7YDOBM8vAomWUz7S50fn20277417s-sLB1dSxMEQIpczRv3bMITO-7x_rK0WjMJjrwOgNWAOzPptXXsvCn1lN2MLuaSW_5A8BM36n3RngKz9-l1h59qqUyyFLw");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-accent-orange text-white text-[10px] font-bold uppercase mb-2">Community Events</span>
+<h3 class="text-white text-xl font-bold">Environmental Clean-up</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Building cleaner and healthier communities together.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+<!-- Image 6 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-lg cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Young person learning digital skills in a computer lab" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2HwvIIO3SV1brPPUNmIik7xbJbCf4zfkwU2WCTEcf-C3Ewoijh9RJfBSwU3s5_fip_rF2lK5WsoROtkngkrp8o4ba1O-fWG62due1J7_3Ca6oXEQVplnf85zCLuDbN3UMAwmMNwPQX5_2KEUfWaUNfFrxVQ5yx8vIoiKS_exnyx0fpQQpCW6wUUAC5XZ9kHyaGqrEAbCfX-N0sCqm0H0oxJz4b3gOHE_lsnrSm62UPj0MZb9JsIPw_EMbIlMMyMDB1X01w36nF9f5");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded bg-primary text-background-dark text-[10px] font-bold uppercase mb-2">Youth Empowerment</span>
+<h3 class="text-white text-xl font-bold">Vocational Training</h3>
+<p class="text-slate-300 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Skills development for sustainable livelihoods.</p>
+</div>
+<div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="bg-primary/10 dark:bg-primary/5 py-16 px-4">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl md:text-5xl font-black leading-tight tracking-tight">
+                        Support Our Vision
+                    </h2>
+<p class="text-slate-700 dark:text-slate-300 text-lg max-w-2xl">
+                        Your contribution helps us reach more communities and change more lives. Every donation, no matter how small, makes a lasting impact.
+                    </p>
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-background-dark text-lg font-bold hover:shadow-xl hover:shadow-primary/30 transition-all">
+                        Make a Donation Today
+                    </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8 px-6 md:px-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-slate-900 dark:text-slate-100 mb-6">
+<div class="size-6 flex items-center justify-center bg-primary rounded text-background-dark">
+<span class="material-symbols-outlined text-sm font-bold">diversity_3</span>
+</div>
+<h2 class="text-base font-extrabold leading-tight">Mwaka Nawila</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                        Empowering marginalized communities in Zambia through education, health, and sustainable development initiatives.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Our History</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Annual Reports</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Volunteer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Our Work</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Education Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Health Initiatives</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Youth Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Advocacy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Contact Us</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400 font-medium">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+<span>Plot 450, Great North Road, Lusaka, Zambia</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+<span>+260 971 000 000</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+<span>hello@mwakanawila.org</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 pt-8 text-center text-slate-500 dark:text-slate-500 text-xs">
+<p>© 2024 Mwaka Nawila Foundation. All rights reserved. Registered NGO No. 12345678.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
