@@ -33,27 +33,35 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
 <div class="relative flex min-h-screen flex-col overflow-x-hidden">
-<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4 sticky top-0 z-50 lg:px-20">
+
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
 <div class="flex items-center gap-3">
-<div class="size-8 text-primary">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
-</svg>
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">diversity_3</span>
 </div>
-<h2 class="text-xl font-bold tracking-tight">Mwaka Nawila</h2>
+<a href="/" class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">Mwaka Nawila Foundation</a>
 </div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Programs</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
-<button class="bg-primary text-slate-900 px-5 py-2 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">
-                    Support Us
-                </button>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs">Programs</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us">About Us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="gallery">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us">Contact Us</a>
 </nav>
-<div class="md:hidden">
+<div class="flex items-center gap-4">
+<button onclick="window.location.href='donate'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+Donate
+</button>
+<button class="md:hidden text-slate-900 dark:text-white">
 <span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
 </div>
 </header>
+
 <main class="flex-1">
 <section class="relative h-[600px] flex items-center justify-center text-center px-4 overflow-hidden">
 <div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="A group of smiling children playing together safely." style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxW2ZwZvZjqtLqTxsrAyCDvaVNR64-dep44SHXmMGI-_hrxF6kwOobr2maYxkKmzTpbZ829_k2Kud0_ZCHF-gXV39cj3bs8WaGpWPoWsmaaNttBW51HSZSuqkcjcZbTfeZ8191M1XR3ZVmnqrHA5f2JKLLt_6mwJC4pYgocm4dT6anqK9_0cRdkgzdTSsycyTp8nPGeSaOarXFEohXgHg1mfBKjZ5pfdyfO7mpGYC5-sKIR86qlmjNfVh7dirSo7P5_g0mKXKsHDFR');"></div>
@@ -226,50 +234,57 @@
 </div>
 </section>
 </main>
-<footer class="bg-slate-900 text-slate-400 py-16 px-6 lg:px-20 border-t border-slate-800">
-<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
-<div class="col-span-2">
+
+<footer class="bg-slate-900 text-slate-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
 <div class="flex items-center gap-3 text-white mb-6">
-<div class="size-6 text-primary">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
-</svg>
+<div class="size-8 bg-primary rounded flex items-center justify-center text-slate-900">
+<span class="material-symbols-outlined text-xl font-bold">diversity_3</span>
 </div>
-<h2 class="text-xl font-bold tracking-tight">Mwaka Nawila Foundation</h2>
+<span class="text-xl font-black uppercase">Mwaka Nawila</span>
 </div>
-<p class="max-w-md mb-8">Empowering communities to protect and nurture every child. Join us in building a future where every child is safe, educated, and heard.</p>
+<p class="max-w-sm mb-8 leading-relaxed">
+                        A registered NGO dedicated to transforming the lives of youth in Zambia through health, education, and social protection initiatives.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
 </div>
 <div>
-<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Navigation</h4>
-<ul class="space-y-4 text-sm font-medium">
-<li><a class="hover:text-primary transition-colors" href="#">Our Programs</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Safety Protocols</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Impact Reports</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<h5 class="text-white font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="about_us">About Our Foundation</a></li>
+<li><a class="hover:text-primary transition-colors" href="impact_stories">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="our_programs">Current Projects</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Support</a></li>
 </ul>
 </div>
 <div>
-<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Connect</h4>
-<div class="flex gap-4">
-<div class="size-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all cursor-pointer">
-<span class="material-symbols-outlined text-xl">share</span>
-</div>
-<div class="size-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all cursor-pointer">
-<span class="material-symbols-outlined text-xl">public</span>
-</div>
-<div class="size-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all cursor-pointer">
-<span class="material-symbols-outlined text-xl">groups</span>
+<h5 class="text-white font-bold mb-6">Get Involved</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="volunteer_signup">Become a Volunteer</a></li>
+<li><a class="hover:text-primary transition-colors" href="become_a_partner">Corporate Partnerships</a></li>
+<li><a class="hover:text-primary transition-colors" href="donate">Make a Donation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Spread the Word</a></li>
+</ul>
 </div>
 </div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between gap-4">
-<p>© 2024 Mwaka Nawila Foundation. Registered Non-Profit Organization.</p>
+<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-xs uppercase tracking-widest font-bold">
+<p>© 2024 Mwaka Nawila Foundation. All rights reserved.</p>
 <div class="flex gap-8">
 <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-white transition-colors" href="#">Child Safeguarding Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
 </div>
 </div>
 </footer>
+
 </div>
 </body></html>
