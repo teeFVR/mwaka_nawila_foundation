@@ -32,6 +32,12 @@
             },
         }
     </script>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
@@ -57,11 +63,29 @@
 <div class="flex items-center gap-4">
 <button onclick="window.location.href='donate.html'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
 Donate
-</button>
-<button class="md:hidden text-slate-900 dark:text-white">
+<button onclick="toggleMenu()" class="md:hidden text-slate-900 dark:text-white">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
+</div>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-background-light dark:bg-background-dark border-t border-primary/10">
+<div class="flex flex-col px-6 py-4 space-y-4">
+
+<a href="our_programs.html" class="font-semibold hover:text-primary">Programs</a>
+
+<a href="impact_stories.html" class="font-semibold hover:text-primary">Impact</a>
+
+<a href="about_us.html" class="font-semibold hover:text-primary">About Us</a>
+
+<a href="gallery.html" class="font-semibold hover:text-primary">Gallery</a>
+
+<a href="contact_us.html" class="font-semibold hover:text-primary">Contact Us</a>
+
+<a href="donate.html" class="bg-primary text-background-dark px-4 py-2 rounded-lg font-bold text-center">
+Donate
+</a>
+
 </div>
 </div>
 </header>
