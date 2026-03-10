@@ -31,7 +31,6 @@
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <!-- Top Navigation Bar -->
-
 <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between h-20">
@@ -39,27 +38,27 @@
 <div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
 <span class="material-symbols-outlined font-bold">diversity_3</span>
 </div>
-<a href="/" class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">Mwaka Nawila Foundation</a>
+<a class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase" href="/">Mwaka Nawila Foundation</a>
 </div>
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs">Programs</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="news_blog">News</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us">About Us</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="gallery">Gallery</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us">Contact Us</a>
 </nav>
 <div class="flex items-center gap-4">
-<button onclick="window.location.href='donate'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+<button class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all" onclick="window.location.href='donate'">
 Donate
 </button>
-<button class="md:hidden text-slate-900 dark:text-white">
-<span class="material-symbols-outlined">menu</span>
+<button class="md:hidden text-slate-900 dark:text-white flex items-center justify-center" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
 </div>
 </div>
 </header>
-
 <main class="flex flex-col flex-1">
 <!-- Hero Section -->
 <section class="px-6 md:px-20 lg:px-40 py-12 md:py-20 bg-white dark:bg-background-dark">
@@ -240,7 +239,6 @@ Donate
 </section>
 </main>
 <!-- Footer -->
-
 <footer class="bg-slate-900 text-slate-400 py-16">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid md:grid-cols-4 gap-12 mb-12">
@@ -267,9 +265,10 @@ Donate
 <h5 class="text-white font-bold mb-6">Quick Links</h5>
 <ul class="space-y-4 text-sm">
 <li><a class="hover:text-primary transition-colors" href="about_us">About Our Foundation</a></li>
-<li><a class="hover:text-primary transition-colors" href="impact_stories">Success Stories</a></li>
-<li><a class="hover:text-primary transition-colors" href="our_programs">Current Projects</a></li>
-<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="impact_stories">Impact Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="news_blog">News &amp; Updates</a></li>
+<li><a class="hover:text-primary transition-colors" href="our_programs">Our Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Us</a></li>
 </ul>
 </div>
 <div>
@@ -291,7 +290,61 @@ Donate
 </div>
 </div>
 </footer>
+</div>
+</div>
+<div class="fixed inset-0 z-[100] bg-background-dark/95 backdrop-blur-lg translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
+<div class="flex flex-col h-full p-8">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">diversity_3</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-white uppercase">MWAKA NAWILA</span>
+</div>
+<button class="text-white" id="close-menu">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="our_programs">Programs</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="news_blog">News</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="about_us">About Us</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="gallery">Gallery</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="contact_us">Contact Us</a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-4 bg-primary text-background-dark font-bold rounded-xl text-lg shadow-lg shadow-primary/20" onclick="window.location.href='donate'">
+                Donate Now
+            </button>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-</div>
-</div>
+        if (menuBtn && closeBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+
+            // Close menu on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    });
+</script>
 </body></html>

@@ -34,7 +34,6 @@
 <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <!-- Top Navigation Bar -->
-
 <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between h-20">
@@ -42,27 +41,27 @@
 <div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
 <span class="material-symbols-outlined font-bold">diversity_3</span>
 </div>
-<a href="/" class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">Mwaka Nawila Foundation</a>
+<a class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase" href="/">Mwaka Nawila Foundation</a>
 </div>
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="our_programs">Programs</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="news_blog">News</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us">About Us</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="gallery">Gallery</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact_us">Contact Us</a>
 </nav>
 <div class="flex items-center gap-4">
-<button onclick="window.location.href='donate'" class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all">
+<button class="hidden sm:block px-6 py-2.5 bg-primary text-background-dark font-bold rounded-lg hover:shadow-lg hover:shadow-primary/20 transition-all" onclick="window.location.href='donate'">
 Donate
 </button>
-<button class="md:hidden text-slate-900 dark:text-white">
-<span class="material-symbols-outlined">menu</span>
+<button class="md:hidden text-slate-900 dark:text-white flex items-center justify-center" id="menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
 </div>
 </div>
 </header>
-
 <main class="flex flex-1 flex-col items-center">
 <div class="layout-content-container flex flex-col max-w-[1200px] w-full p-6 md:p-10">
 <!-- Hero Section -->
@@ -100,27 +99,21 @@ Donate
 <div class="mb-4">
 <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary rounded">Health</span>
 </div>
-
 <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-2">HIV Prevention &amp; Awareness</h3>
-
 <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
 Reducing transmission through localized education, voluntary testing, and consistent community health initiatives focused on vulnerability.
 </p>
-
 <div class="flex gap-3">
-
-<a href="donate" class="flex-1">
+<a class="flex-1" href="donate">
 <button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
 Support
 </button>
 </a>
-
-<a href="contact_us" class="flex-1">
+<a class="flex-1" href="contact_us">
 <button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
 Inquire
 </button>
 </a>
-
 </div>
 </div>
 </div>
@@ -136,14 +129,12 @@ Inquire
                                     Equipping the next generation with technical skills, leadership training, and entrepreneurship opportunities for a brighter socioeconomic future.
                                 </p>
 <div class="flex gap-3">
-
-<a href="donate" class="flex-1">
+<a class="flex-1" href="donate">
 <button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
 Support
 </button>
 </a>
-
-<a href="contact_us" class="flex-1">
+<a class="flex-1" href="contact_us">
 <button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
 Inquire
 </button>
@@ -163,14 +154,12 @@ Inquire
                                     Ensuring every girl has access to quality education, mentoring, and the necessary resources to overcome barriers to learning.
                                 </p>
 <div class="flex gap-3">
-
-<a href="donate" class="flex-1">
+<a class="flex-1" href="donate">
 <button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
 Support
 </button>
 </a>
-
-<a href="contact_us" class="flex-1">
+<a class="flex-1" href="contact_us">
 <button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
 Inquire
 </button>
@@ -190,14 +179,12 @@ Inquire
                                     Safeguarding vulnerable children from exploitation and abuse while promoting their emotional and physical well-being.
                                 </p>
 <div class="flex gap-3">
-
-<a href="donate" class="flex-1">
+<a class="flex-1" href="donate">
 <button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
 Support
 </button>
 </a>
-
-<a href="contact_us" class="flex-1">
+<a class="flex-1" href="contact_us">
 <button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
 Inquire
 </button>
@@ -217,14 +204,12 @@ Inquire
                                     Promoting environmental sustainability through community-led conservation, reforestation, and climate resilience projects.
                                 </p>
 <div class="flex gap-3">
-
-<a href="donate" class="flex-1">
+<a class="flex-1" href="donate">
 <button class="w-full bg-primary text-slate-900 text-sm font-bold py-3 rounded-lg hover:brightness-110 transition-all">
 Support
 </button>
 </a>
-
-<a href="contact_us" class="flex-1">
+<a class="flex-1" href="contact_us">
 <button class="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
 Inquire
 </button>
@@ -245,11 +230,10 @@ Inquire
                                 </p>
 </div>
 <div class="flex flex-wrap gap-4 justify-center">
-<a href="donate" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-slate-900 text-lg font-bold hover:brightness-110 transition-all">
+<a class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-slate-900 text-lg font-bold hover:brightness-110 transition-all" href="donate">
 Make a Donation
 </a>
-
-<a href="become_a_partner" class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/10 text-white border border-white/20 text-lg font-bold hover:bg-white/20 transition-all">
+<a class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/10 text-white border border-white/20 text-lg font-bold hover:bg-white/20 transition-all" href="become_a_partner">
 Partner With Us
 </a>
 </div>
@@ -258,7 +242,6 @@ Partner With Us
 </div>
 </main>
 <!-- Footer -->
-
 <footer class="bg-slate-900 text-slate-400 py-16">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid md:grid-cols-4 gap-12 mb-12">
@@ -285,9 +268,10 @@ Partner With Us
 <h5 class="text-white font-bold mb-6">Quick Links</h5>
 <ul class="space-y-4 text-sm">
 <li><a class="hover:text-primary transition-colors" href="about_us">About Our Foundation</a></li>
-<li><a class="hover:text-primary transition-colors" href="impact_stories">Success Stories</a></li>
-<li><a class="hover:text-primary transition-colors" href="our_programs">Current Projects</a></li>
-<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="impact_stories">Impact Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="news_blog">News &amp; Updates</a></li>
+<li><a class="hover:text-primary transition-colors" href="our_programs">Our Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact_us">Contact Us</a></li>
 </ul>
 </div>
 <div>
@@ -309,7 +293,61 @@ Partner With Us
 </div>
 </div>
 </footer>
+</div>
+</div>
+<div class="fixed inset-0 z-[100] bg-background-dark/95 backdrop-blur-lg translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
+<div class="flex flex-col h-full p-8">
+<div class="flex items-center justify-between mb-12">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">diversity_3</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-white uppercase">MWAKA NAWILA</span>
+</div>
+<button class="text-white" id="close-menu">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="our_programs">Programs</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="impact_stories">Impact</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="news_blog">News</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="about_us">About Us</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="gallery">Gallery</a>
+<a class="text-2xl font-bold text-white hover:text-primary transition-colors" href="contact_us">Contact Us</a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-4 bg-primary text-background-dark font-bold rounded-xl text-lg shadow-lg shadow-primary/20" onclick="window.location.href='donate'">
+                Donate Now
+            </button>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-</div>
-</div>
+        if (menuBtn && closeBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+
+            // Close menu on link click
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    });
+</script>
 </body></html>
